@@ -1,0 +1,788 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Nunito,wght@1,400;1,500&family=Overpass&family=Poppins:ital,wght@0,600;0,700;0,800;1,300;1,600;1,800&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito,wght@0,600;0,700;0,800;1,300;1,600;1,800&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Nunito:ital,wght@1,400;1,500&family=Overpass&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,300;1,600;1,800&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    user-select: none;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+nav {
+    width: 100%;
+    height: 8vh;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: fixed;
+    background-color: #241c1a;
+    z-index: 99;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    box-shadow: 0 0 12px 1px rgba(138, 126, 126, 0.103);
+    user-select: none;
+    z-index: 99999;
+}
+
+.link-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 18%;
+}
+
+.logo {
+    display: flex;
+    width: max-content;
+    /* background-color: red; */
+    margin-left: 5%;
+    gap: 5px;
+}
+
+.judul {
+    font-family: poppins;
+    margin-top: 6px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.judulSpan {
+    font-family: poppins;
+    margin-top: 6px;
+    color: rgb(206, 140, 114);
+    font-weight: bold;
+}
+
+.link-nav a {
+    /* border: 1px solid red; */
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: poppins;
+    font-weight: 500;
+    font-size: .8rem;
+    transition: .8s;
+}
+
+.link-nav a:hover {
+    color: rgb(155, 155, 2);
+    font-weight: 600;
+    transform: scale(1.2);
+}
+
+/* bagian1 */
+.bagian1{
+    width: 100%;
+    height: max-content;
+    background-color: #201b1b;
+    padding-top: 80px;
+    font-size: 2rem;
+    position: relative;
+}
+.judulBg1 {
+    font-family: poppins;
+    margin-top: 6px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.judulSpanBg1 {
+    font-family: poppins;
+    margin-top: 6px;
+    color: rgb(206, 140, 114);
+    font-weight: bold;
+}
+.col-judul {
+    display: flex;
+    width: 100%;
+    /* background-color: red; */
+    justify-content: center;
+    gap: 5px;
+
+}
+.col-line{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.col-line span{
+    width: 40%;
+    height: 2px;
+    background-color: white;
+    border-radius: 5px;
+}
+.cardColumn {
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap !important;
+    gap: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+}
+.column2-card{
+    width: 20%;
+    position: relative;
+    height: max-content;
+    padding-bottom: 1%;
+    margin-bottom: 20px;
+}
+.col-harga{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgb(80, 64, 59);
+    top: -16px;
+    right: -15px;
+    z-index: 9990;
+}
+.col-harga span{
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    font-size: 1rem;
+    font-family: poppins;
+}
+.card {
+    width: 100%;
+    position: relative;
+    background-color: rgb(43, 35, 35);
+    box-shadow: 0 0 5px 0px rgba(92, 83, 83, 0.122);
+    height: max-content;
+    border-radius: 5px;
+    overflow: hidden;
+    padding-bottom: 10%;
+    transition: .8s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.header1{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+    background-size: cover;
+   background-image: url('https://img.okezone.com/content/2022/12/29/298/2736683/10-ide-menu-bakar-bakaran-malam-tahun-baru-2023-4xYEBbLuVS.jpeg');
+}
+.header2{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+background-image: url('https://img-global.cpcdn.com/recipes/afbe68ff0b9bbfd8/680x482cq70/jigor-pedas-viral-foto-resep-utama.jpg');
+    background-size: cover;
+}
+.header3{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+background-image: url('https://assets-pergikuliner.com/aEhIxPmxHeSpQy73rYpp1lzo9ho=/fit-in/1366x768/smart/filters:no_upscale()/https://assets-pergikuliner.com/uploads/image/picture/2414452/picture-1643251671.jpg');
+    background-size: cover;
+}
+.header4{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+background-image: url('https://asset-a.grid.id/crop/0x0:0x0/x/photo/2022/09/26/sejarah-es-teh-di-duniajpg-20220926041625.jpg');
+    background-size: cover;
+}
+.header5{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+background-image: url('https://www.jagel.id/api/listimage/v/Extrajoss-Susu-0-7266093ce430f22b.jpg');
+    background-size: cover;
+}
+.header6{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+background-image: url('https://www.dapurkobe.co.id/wp-content/uploads/ayam-geprek-sambal-korek.jpg');
+    background-size: cover;
+}
+.header7{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+background-image: url('https://cdn.idntimes.com/content-images/community/2023/06/istockphoto-1494399914-612x612-fccb20d1ebcde7f1a610e12da6ee3b31-19926228584670ad0259781d69c5aa8d_600x400.jpg');
+    background-size: cover;
+}
+.header8{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+background-image: url('https://cdn.idntimes.com/content-images/post/20220331/ht-grilled-lemon-garlic-scallops1288-bdb882b06a41e3b3f39bcd53aa4f9ce5.png');
+    background-size: cover;
+}
+
+
+.header .span {
+    width: 20px;
+    height: 100vh;
+    background-color: #ffffff30;
+    position: absolute;
+    top: -300px;
+    left: -100px;
+    z-index: 11;
+    transform: rotate(45deg);
+}
+
+.card:hover .header .span {
+    content: "";
+    width: 20px;
+    height: 100vh;
+    background-color: #ffffff30;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 11;
+    transform: rotate(45deg);
+    transition: .8s;
+}
+
+/* .header img{
+    transition: .8s;
+}
+.card:hover .header img{
+    transform: scale(1.04);
+} */
+.content {
+    width: 90%;
+    margin: auto;
+}
+
+.logoCard {
+    font-family: poppins;
+    margin-top: 6px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.logoCard span {
+    font-family: poppins;
+    margin-top: 6px;
+    color: rgb(206, 140, 114);
+    font-weight: bold;
+}
+
+.deskripsi {
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    margin-top: 1%;
+}
+
+.date {
+
+    font-size: .9rem;
+    font-family: nunito;
+    width: 100%;
+    color: #ffffffa1;
+    text-align: start;
+    margin-top: 1.5%;
+    margin-bottom: 3%;
+}
+.form{
+display: flex;
+margin-top: 5%;
+gap: 8px;
+}
+.form button{
+    padding: 0 8px !important;
+}
+.form input{
+    padding: 6px 0 6px 5px !important;
+    width: 80%;
+}
+.pesan{
+ margin: auto;
+    width: 100%;
+    border: none;
+    background-color: #725050;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    font-family: poppins;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.col-btn-pesan{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 4%;
+}
+
+.hal6 {
+    width: 100%;
+    height: max-content;
+    background-color: #201b1b;
+    padding-bottom: 5%;
+}
+
+.hal6 h1 {
+   
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 3vw;
+    padding: -4%;
+    margin-left: 4%;
+    margin-bottom: 3%;
+    color: #ffffff;
+}
+
+.hal6 h1 span {
+    color: rgb(206, 140, 114);
+    font-family: poppins;
+    font-weight: bold;
+}
+
+.logoservice7 {
+    padding: 5% 5%;
+    background-color: rgb(126, 87, 71);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 45px;
+    color: white;
+    font-size: 1.5vw;
+    margin-bottom: 3%;
+}
+
+.logoservice8 {
+    padding: 7.5% 4.5%;
+    background-color:rgb(126, 87, 71);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 45px;
+    color: white;
+    font-size: 1.5vw;
+    margin-bottom: 3%;
+}
+
+.logoservice9 {
+    padding: 5% 6%;
+    background-color: rgb(126, 87, 71);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 45px;
+    color: white;
+    font-size: 1.5vw;
+    margin-bottom: 3%;
+}
+
+.baris3 {
+    width: 90%;
+    display: flex;
+    gap: 5%;
+    margin-bottom: 4%;
+    justify-content: center;
+    align-items: center;
+}
+
+.parentBaris {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px 1px rgb(126, 87, 71);
+    transition: .5s;
+    font-family: oswald;
+}
+
+.box2 p {
+    font-size: .9vw;
+    padding-bottom: 2%;
+}
+
+.box2:hover {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .2);
+    transform: scale(1.05);
+}
+
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.containerForm form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containerForm form input {
+    border: none;
+    padding: 15px 19px;
+    margin-top: 3%;
+    width: 100%;
+    background-color: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    color: #202020;
+    box-shadow: 1px 1px 1px 1px  rgb(126, 87, 71);
+    font-size: 1rem;
+    font-family: poppins;
+}
+
+.containerForm form select {
+    border: none;
+    padding: 15px 15px;
+    margin-top: 3%;
+    width: 100%;
+    background-color: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    color: #202020;
+    box-shadow: 1px 1px 1px 1px  rgb(126, 87, 71);
+    font-size: 1rem;
+    font-family: poppins;
+}
+
+.containerForm form input::placeholder {
+    color: #000000 ; 
+    font-size:1rem;
+}
+
+.containerForm form input:valid {
+    color: rgb(0, 0, 0);
+}
+
+.containerForm form form button {
+    margin-top: 6%;
+    border: none;
+    padding: 2% 2%;
+    background-color: #ff7e15;
+    outline: none;
+    border-radius: 3px;
+    color: #ffffff;
+    width: 50%;
+    font-size: 1vw;
+    font-family: poppins;
+    cursor: pointer;
+}
+
+.contentHal6 {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+}
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2%;
+    width: 50%;
+}
+
+
+
+@media (max-width: 600px){
+    .bagian1{
+        width: 100%;
+        height: max-content;
+        background-color: #201b1b;
+        padding-top: 100px;
+        font-size: 2rem;
+    }
+   .judulBg1 {
+    font-family: poppins;
+    margin-top: 6px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.judulSpanBg1 {
+    font-family: poppins;
+    margin-top: 6px;
+    color: rgb(206, 140, 114);
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+    .col-line{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    .cardColumn {
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap !important;
+        gap: 4%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 8%;
+    }
+    .column2-card{
+        width: 80%;
+        position: relative;
+        height: max-content;
+        padding-bottom: 1%;
+        margin-bottom: 20px;
+    }
+    .logoCard {
+        font-family: poppins;
+        margin-top: 10px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    
+    .logoCard span {
+        font-family: poppins;
+        margin-top: 10px;
+        color: rgb(206, 140, 114);
+        
+}
+.pesan{
+    margin: auto;
+       width: 92%;
+       border: none;
+       background-color: #725050;
+       padding: 10px 0;
+       border-radius: 5px;
+       color: white;
+       font-size: 1rem;
+       font-family: poppins;
+       cursor: pointer;
+   }
+   
+   .col-btn-pesan{
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding-bottom: 8%;
+   }
+   .baris3 {
+    width: 90%;
+    display: flex;
+    gap: 5%;
+    flex-direction: column;
+    margin-bottom: 4%;
+    justify-content: center;
+    align-items: center;
+}
+.box2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px 1px rgb(126, 87, 71);
+    transition: .5s;
+    font-family: oswald;
+    margin-top: 40px;
+    height: 100px;
+}
+
+.box2 p {
+    font-size: .9rem;
+    padding-bottom: 2%;
+}
+.txtService1 {
+    font-size: 1.3rem;
+    font-family: oswald;
+    font-weight: 800;
+    color: #202020;
+    margin-bottom: 3px;
+    margin-top: -20px;
+}
+
+.logoservice7 #i{
+    font-size: 1rem;
+}
+.logoservice8 #i{
+    font-size: 1rem;
+}
+.logoservice9 #i{
+    font-size: 1rem;
+}
+.logoservice7 {
+    padding: 17px 17px;
+    background-color: rgb(126, 87, 71);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 45px;
+    color: white;
+    font-size: 1.5vw;
+    margin-top: -30px;
+    margin-bottom: 25px;
+}
+
+.logoservice8 {
+    padding: 25px 19px;
+    background-color:rgb(126, 87, 71);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 45px;
+    color: white;
+    font-size: 1.5vw;
+    margin-top: -30px;
+    margin-bottom: 25px;
+}
+
+.logoservice9 {
+    padding: 17px 20px;
+    background-color: rgb(126, 87, 71);
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 45px;
+    color: white;
+    font-size: 1.5vw;
+    margin-top: -30px;
+    margin-bottom: 25px;
+}
+.hal6 h1 {
+   
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: -4%;
+    margin-left: 6%;
+    margin-bottom: 3%;
+    color: #ffffff;
+}
+.contentHal6 {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+}
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 103%;
+    margin-left: -3%;
+}
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin-top: 20px;
+}
+.containerForm form input {
+    border: none;
+    padding: 15px 19px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    color: #202020;
+    box-shadow: 1px 1px 1px 1px  rgb(126, 87, 71);
+    font-size: .8rem;
+    font-family: poppins;
+}
+
+.containerForm form select {
+    border: none;
+    padding: 15px 15px;
+    margin-top: 20px;
+    width: 100%;
+    background-color: #ffffff;
+    outline: none;
+    border-radius: 5px;
+    color: #202020;
+    box-shadow: 1px 1px 1px 1px  rgb(126, 87, 71);
+    font-size: .8rem;
+    font-family: poppins;
+}
+
+.containerForm form input::placeholder {
+    color: #000000 ; 
+    font-size:.8rem;
+}
+.pesan{
+    margin: auto;
+       width: 100%;
+       border: none;
+       background-color: #725050;
+       padding: 10px 0;
+       border-radius: 5px;
+       color: white;
+       font-size: 1rem;
+       font-family: poppins;
+       cursor: pointer;
+       margin-top: 25px;
+       margin-bottom: 25px;
+   }
+}
